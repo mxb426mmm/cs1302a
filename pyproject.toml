@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fitpick"
+version = "0.1.0"
+description = "A zero-dependency CLI that scores foods for fitness-conscious buyers: value-for-money, suggested use, and a 0-100 recommendation score."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "group05" },
+]
+keywords = ["fitness", "nutrition", "food", "decision", "cli", "health"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Topic :: Health",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/mxb426mmm/cs1302a"
+Repository = "https://github.com/mxb426mmm/cs1302a"
+
+[project.scripts]
+fitpick = "fitpick.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
