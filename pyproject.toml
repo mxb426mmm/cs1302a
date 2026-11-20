@@ -22,8 +22,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/group05/dueline"
-Repository = "https://github.com/group05/dueline"
+Homepage = "https://github.com/mxb426mmm/cs1302a"
+Repository = "https://github.com/mxb426mmm/cs1302a"
 
 [project.scripts]
 dueline = "dueline.cli:main"
