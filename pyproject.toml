@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dueline"
+version = "0.1.0"
+description = "A zero-dependency CLI to track course assignment deadlines with natural-language due dates."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "group05" },
+]
+keywords = ["deadline", "assignment", "course", "student", "cli", "due-date"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Topic :: Education",
+    "Topic :: Office/Business :: Scheduling",
+]
+
+[project.urls]
+Homepage = "https://github.com/group05/dueline"
+Repository = "https://github.com/group05/dueline"
+
+[project.scripts]
+dueline = "dueline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
